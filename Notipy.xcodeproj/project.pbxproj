@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCEA5BE9168B122100C5A9A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */; };
+		DCEA5BEB168B122100C5A9A2 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5BEA168B122100C5A9A2 /* Python.framework */; };
+		DCEA5BF5168B122100C5A9A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BF3168B122100C5A9A2 /* InfoPlist.strings */; };
+		DCEA5BF7168B122100C5A9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEA5BF6168B122100C5A9A2 /* main.m */; };
+		DCEA5BFB168B122100C5A9A2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BF9168B122100C5A9A2 /* Credits.rtf */; };
+		DCEA5BFD168B122100C5A9A2 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BFC168B122100C5A9A2 /* main.py */; };
+		DCEA5BFF168B122100C5A9A2 /* AppDelegate.py in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */; };
+		DCEA5C02168B122100C5A9A2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5C00168B122100C5A9A2 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCEA5BE4168B122100C5A9A2 /* Notipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DCEA5BEA168B122100C5A9A2 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		DCEA5BED168B122100C5A9A2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DCEA5BEE168B122100C5A9A2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DCEA5BEF168B122100C5A9A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCEA5BF2168B122100C5A9A2 /* Notipy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Notipy-Info.plist"; sourceTree = "<group>"; };
+		DCEA5BF4168B122100C5A9A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCEA5BF6168B122100C5A9A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCEA5BF8168B122100C5A9A2 /* Notipy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notipy-Prefix.pch"; sourceTree = "<group>"; };
+		DCEA5BFA168B122100C5A9A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DCEA5BFC168B122100C5A9A2 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = AppDelegate.py; sourceTree = "<group>"; };
+		DCEA5C01168B122100C5A9A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCEA5BE1168B122100C5A9A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEA5BE9168B122100C5A9A2 /* Cocoa.framework in Frameworks */,
+				DCEA5BEB168B122100C5A9A2 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCEA5BD9168B122100C5A9A2 = {
+			isa = PBXGroup;
+			children = (
+				DCEA5BF0168B122100C5A9A2 /* Notipy */,
+				DCEA5BE7168B122100C5A9A2 /* Frameworks */,
+				DCEA5BE5168B122100C5A9A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCEA5BE5168B122100C5A9A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA5BE4168B122100C5A9A2 /* Notipy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCEA5BE7168B122100C5A9A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */,
+				DCEA5BEA168B122100C5A9A2 /* Python.framework */,
+				DCEA5BEC168B122100C5A9A2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCEA5BEC168B122100C5A9A2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA5BED168B122100C5A9A2 /* AppKit.framework */,
+				DCEA5BEE168B122100C5A9A2 /* CoreData.framework */,
+				DCEA5BEF168B122100C5A9A2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DCEA5BF0168B122100C5A9A2 /* Notipy */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA5BFC168B122100C5A9A2 /* main.py */,
+				DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */,
+				DCEA5C00168B122100C5A9A2 /* MainMenu.xib */,
+				DCEA5BF1168B122100C5A9A2 /* Supporting Files */,
+			);
+			path = Notipy;
+			sourceTree = "<group>";
+		};
+		DCEA5BF1168B122100C5A9A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA5BF2168B122100C5A9A2 /* Notipy-Info.plist */,
+				DCEA5BF3168B122100C5A9A2 /* InfoPlist.strings */,
+				DCEA5BF6168B122100C5A9A2 /* main.m */,
+				DCEA5BF8168B122100C5A9A2 /* Notipy-Prefix.pch */,
+				DCEA5BF9168B122100C5A9A2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCEA5BE3168B122100C5A9A2 /* Notipy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEA5C05168B122100C5A9A2 /* Build configuration list for PBXNativeTarget "Notipy" */;
+			buildPhases = (
+				DCEA5BE0168B122100C5A9A2 /* Sources */,
+				DCEA5BE1168B122100C5A9A2 /* Frameworks */,
+				DCEA5BE2168B122100C5A9A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notipy;
+			productName = Notipy;
+			productReference = DCEA5BE4168B122100C5A9A2 /* Notipy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCEA5BDB168B122100C5A9A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = lomoLomo;
+			};
+			buildConfigurationList = DCEA5BDE168B122100C5A9A2 /* Build configuration list for PBXProject "Notipy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCEA5BD9168B122100C5A9A2;
+			productRefGroup = DCEA5BE5168B122100C5A9A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCEA5BE3168B122100C5A9A2 /* Notipy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCEA5BE2168B122100C5A9A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEA5BF5168B122100C5A9A2 /* InfoPlist.strings in Resources */,
+				DCEA5BFB168B122100C5A9A2 /* Credits.rtf in Resources */,
+				DCEA5BFD168B122100C5A9A2 /* main.py in Resources */,
+				DCEA5BFF168B122100C5A9A2 /* AppDelegate.py in Resources */,
+				DCEA5C02168B122100C5A9A2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCEA5BE0168B122100C5A9A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEA5BF7168B122100C5A9A2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCEA5BF3168B122100C5A9A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEA5BF4168B122100C5A9A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCEA5BF9168B122100C5A9A2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEA5BFA168B122100C5A9A2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DCEA5C00168B122100C5A9A2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEA5C01168B122100C5A9A2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCEA5C03168B122100C5A9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCEA5C04168B122100C5A9A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCEA5C06168B122100C5A9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Notipy/Notipy-Prefix.pch";
+				INFOPLIST_FILE = "Notipy/Notipy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCEA5C07168B122100C5A9A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Notipy/Notipy-Prefix.pch";
+				INFOPLIST_FILE = "Notipy/Notipy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCEA5BDE168B122100C5A9A2 /* Build configuration list for PBXProject "Notipy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEA5C03168B122100C5A9A2 /* Debug */,
+				DCEA5C04168B122100C5A9A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEA5C05168B122100C5A9A2 /* Build configuration list for PBXNativeTarget "Notipy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEA5C06168B122100C5A9A2 /* Debug */,
+				DCEA5C07168B122100C5A9A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCEA5BDB168B122100C5A9A2 /* Project object */;
+}
