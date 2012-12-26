@@ -23,6 +23,9 @@ class AppDelegate(NSObject):
     userText = IBOutlet()
     passText = IBOutlet()
     
+    user = None
+    password = None
+    
     def applicationDidFinishLaunching_(self, sender):
         NSLog("Application did finish launching.")
 
@@ -42,12 +45,18 @@ class AppDelegate(NSObject):
         for category in categories:
             NSLog(category.label)
 
+    @IBAction
+    def savePreferences_(self, sender):
+        self.user = self.userText.stringValue()
+        self.password = self.passText.stringValue()
+                
+        self.prefWindow.orderOut_(None)
     
     @IBAction
     def checkItems_(self, sender):
         gntp.notifier.mini("Checking items")
 
-        self.testReader(self.userText.stringValue(),self.passText.stringValue())
+        self.testReader(self.user,self.password)
                         
 
 
@@ -70,5 +79,8 @@ class AppDelegate(NSObject):
 
         self.statusitem.setMenu_(self.statusMenu)
         
+        
+        if (self.user is None or self.password is None):
+            self.prefWindow.makeKeyAndOrderFront_(None)
         
         print "awake"
