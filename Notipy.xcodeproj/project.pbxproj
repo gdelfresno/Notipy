@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCE40446168B6C1F009C6439 /* Google Reader.icns in Resources */ = {isa = PBXBuildFile; fileRef = DCE40445168B6C1F009C6439 /* Google Reader.icns */; };
 		DCEA5BE9168B122100C5A9A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */; };
 		DCEA5BEB168B122100C5A9A2 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5BEA168B122100C5A9A2 /* Python.framework */; };
 		DCEA5BF5168B122100C5A9A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BF3168B122100C5A9A2 /* InfoPlist.strings */; };
@@ -15,10 +16,11 @@
 		DCEA5BFD168B122100C5A9A2 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BFC168B122100C5A9A2 /* main.py */; };
 		DCEA5BFF168B122100C5A9A2 /* AppDelegate.py in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */; };
 		DCEA5C02168B122100C5A9A2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5C00168B122100C5A9A2 /* MainMenu.xib */; };
-		DCEA5C09168B208B00C5A9A2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5C08168B208B00C5A9A2 /* icon.png */; };
+		DCEA5C11168B2EB500C5A9A2 /* gricon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEA5C10168B2EB500C5A9A2 /* gricon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DCE40445168B6C1F009C6439 /* Google Reader.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Google Reader.icns"; sourceTree = "<group>"; };
 		DCEA5BE4168B122100C5A9A2 /* Notipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DCEA5BEA168B122100C5A9A2 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
@@ -33,7 +35,7 @@
 		DCEA5BFC168B122100C5A9A2 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = AppDelegate.py; sourceTree = "<group>"; };
 		DCEA5C01168B122100C5A9A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		DCEA5C08168B208B00C5A9A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DCEA5C10168B2EB500C5A9A2 /* gricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gricon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		DCEA5BD9168B122100C5A9A2 = {
 			isa = PBXGroup;
 			children = (
+				DCE40445168B6C1F009C6439 /* Google Reader.icns */,
 				DCEA5BF0168B122100C5A9A2 /* Notipy */,
 				DCEA5BE7168B122100C5A9A2 /* Frameworks */,
 				DCEA5BE5168B122100C5A9A2 /* Products */,
@@ -89,7 +92,7 @@
 		DCEA5BF0168B122100C5A9A2 /* Notipy */ = {
 			isa = PBXGroup;
 			children = (
-				DCEA5C08168B208B00C5A9A2 /* icon.png */,
+				DCEA5C10168B2EB500C5A9A2 /* gricon.png */,
 				DCEA5BFC168B122100C5A9A2 /* main.py */,
 				DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */,
 				DCEA5C00168B122100C5A9A2 /* MainMenu.xib */,
@@ -166,7 +169,8 @@
 				DCEA5BFD168B122100C5A9A2 /* main.py in Resources */,
 				DCEA5BFF168B122100C5A9A2 /* AppDelegate.py in Resources */,
 				DCEA5C02168B122100C5A9A2 /* MainMenu.xib in Resources */,
-				DCEA5C09168B208B00C5A9A2 /* icon.png in Resources */,
+				DCEA5C11168B2EB500C5A9A2 /* gricon.png in Resources */,
+				DCE40446168B6C1F009C6439 /* Google Reader.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +309,7 @@
 				DCEA5C07168B122100C5A9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

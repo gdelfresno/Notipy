@@ -10,19 +10,47 @@
 from Foundation import *
 from AppKit import *
 from objc import YES, NO, IBAction, IBOutlet
+import gntp.notifier
 
+from libgreader import GoogleReader, ClientAuthMethod
 from PyObjCTools import NibClassBuilder
 
 class AppDelegate(NSObject):
     statusMenu = IBOutlet()
-
+    
+    prefWindow = IBOutlet()
+    
+    userText = IBOutlet()
+    passText = IBOutlet()
+    
     def applicationDidFinishLaunching_(self, sender):
         NSLog("Application did finish launching.")
 
-    @IBAction
-    def doSomething_(self, sender):
-        NSLog("It's doing something.")
+    def testReader(self,readerUser, readerPassword):
+        
+        ca = ClientAuthMethod(readerUser,readerPassword)
+        reader = GoogleReader(ca)
+        if reader.buildSubscriptionList():
+            NSLog("Google Reader connect ok")
+        else:
+            NSLog("Error retrieving subscriptions from Google Reader")
+            return False
+        
+        NSLog("Getting Google Reader categories")
+        categories = reader.getCategories()
+        NSLog("%d categories",len(categories))
+        for category in categories:
+            NSLog(category.label)
+
     
+    @IBAction
+    def checkItems_(self, sender):
+        gntp.notifier.mini("Checking items")
+
+        self.testReader(self.userText.stringValue(),self.passText.stringValue())
+                        
+
+
     def awakeFromNib(self):
         bundle = NSBundle.mainBundle()
         
@@ -31,14 +59,16 @@ class AppDelegate(NSObject):
         self.statusitem = statusbar.statusItemWithLength_(NSVariableStatusItemLength)
         # Load all images
         
-        self.statusImage = NSImage.alloc().initWithContentsOfFile_(bundle.pathForResource_ofType_("icon","png"))
+        self.statusImage = NSImage.alloc().initWithContentsOfFile_(bundle.pathForResource_ofType_("gricon","png"))
         
         # Set initial image
         self.statusitem.setImage_(self.statusImage)
         # Let it highlight upon clicking
         self.statusitem.setHighlightMode_(1)
         # Set a tooltip
-        self.statusitem.setToolTip_('Sync Trigger')
+        self.statusitem.setToolTip_('Google Reader Notifier')
 
         self.statusitem.setMenu_(self.statusMenu)
+        
+        
         print "awake"
