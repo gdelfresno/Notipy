@@ -5,6 +5,7 @@
 //  Created by Guillermo del Fresno Herena on 26/12/12.
 //  Copyright (c) 2012 lomoLomo. All rights reserved.
 //
+#import "EMKeychainItem.h"
 
 #import <Cocoa/Cocoa.h>
 

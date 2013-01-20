@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC791E0816AC51B400CB1E43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC791E0716AC51B400CB1E43 /* Security.framework */; };
+		DC791E0E16AC520600CB1E43 /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC791E0C16AC520600CB1E43 /* EMKeychainItem.m */; };
 		DCE40446168B6C1F009C6439 /* Google Reader.icns in Resources */ = {isa = PBXBuildFile; fileRef = DCE40445168B6C1F009C6439 /* Google Reader.icns */; };
 		DCEA5BE9168B122100C5A9A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */; };
 		DCEA5BEB168B122100C5A9A2 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEA5BEA168B122100C5A9A2 /* Python.framework */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC791E0716AC51B400CB1E43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DC791E0B16AC520600CB1E43 /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMKeychainItem.h; path = EMKeychain/EMKeychainItem.h; sourceTree = "<group>"; };
+		DC791E0C16AC520600CB1E43 /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMKeychainItem.m; path = EMKeychain/EMKeychainItem.m; sourceTree = "<group>"; };
 		DCE40445168B6C1F009C6439 /* Google Reader.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Google Reader.icns"; sourceTree = "<group>"; };
 		DCEA5BE4168B122100C5A9A2 /* Notipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEA5BE8168B122100C5A9A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC791E0816AC51B400CB1E43 /* Security.framework in Frameworks */,
 				DCEA5BE9168B122100C5A9A2 /* Cocoa.framework in Frameworks */,
 				DCEA5BEB168B122100C5A9A2 /* Python.framework in Frameworks */,
 			);
@@ -51,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC791E1016AC544500CB1E43 /* EMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				DC791E0B16AC520600CB1E43 /* EMKeychainItem.h */,
+				DC791E0C16AC520600CB1E43 /* EMKeychainItem.m */,
+			);
+			name = EMKeychain;
+			sourceTree = "<group>";
+		};
 		DCEA5BD9168B122100C5A9A2 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +97,7 @@
 		DCEA5BEC168B122100C5A9A2 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC791E0716AC51B400CB1E43 /* Security.framework */,
 				DCEA5BED168B122100C5A9A2 /* AppKit.framework */,
 				DCEA5BEE168B122100C5A9A2 /* CoreData.framework */,
 				DCEA5BEF168B122100C5A9A2 /* Foundation.framework */,
@@ -92,6 +108,7 @@
 		DCEA5BF0168B122100C5A9A2 /* Notipy */ = {
 			isa = PBXGroup;
 			children = (
+				DC791E1016AC544500CB1E43 /* EMKeychain */,
 				DCEA5C10168B2EB500C5A9A2 /* gricon.png */,
 				DCEA5BFC168B122100C5A9A2 /* main.py */,
 				DCEA5BFE168B122100C5A9A2 /* AppDelegate.py */,
@@ -182,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEA5BF7168B122100C5A9A2 /* main.m in Sources */,
+				DC791E0E16AC520600CB1E43 /* EMKeychainItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

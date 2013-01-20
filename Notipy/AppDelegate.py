@@ -49,6 +49,22 @@ class AppDelegate(NSObject):
     lastId = None
     growl = None
     
+    def LoadKeychain(self):
+        userName = None
+        try:
+            defaults = NSUserDefaults.standardUserDefaults()
+            userName = defaults.stringForKey_(u"username")
+        except:
+            NSLog("Error reading user name preference")
+
+        if not userName is None:
+            ki = EMGenericKeychainItem.genericKeychainItemForService_withUsername_("Notipy App", userName)
+            if not ki is None:
+                self.password = ki.password()
+                self.user = ki.username()
+            else:
+                NSLog("Login keychain not found")
+
     def applicationDidFinishLaunching_(self, sender):
         appName = "Notipy" #bundle.localizedStringForKey_value_table_(kCFBundleNameKey,'Notipy',None)
         self.growl = gntp.notifier.GrowlNotifier(
@@ -61,6 +77,8 @@ class AppDelegate(NSObject):
         except:
             print "Error registering Growl"
 
+        self.LoadKeychain()
+
         if (self.user is None or self.password is None):
             self.growl.notify(
                               noteType = "Configuration Missing",
@@ -70,7 +88,9 @@ class AppDelegate(NSObject):
                               priority = 1,
                               )
             self.prefWindow.makeKeyAndOrderFront_(None)
-        
+        else:
+            self.userText.setStringValue_(self.user)
+            self.passText.setStringValue_(self.password)
         
         timer = RepeatingTimer(60.0*5,self.checkItems_,None)
         timer.start()
@@ -99,8 +119,20 @@ class AppDelegate(NSObject):
 
     @IBAction
     def savePreferences_(self, sender):
+        NSLog("Saving prefences")
         self.user = self.userText.stringValue()
         self.password = self.passText.stringValue()
+        try:
+            defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject_forKey_(self.user, u"username")
+        except Exception as e:
+            print e
+            NSLog("Error saving user name preference")
+
+        try:
+            EMGenericKeychainItem.addGenericKeychainItemForService_withUsername_password_("Notipy App", self.user, self.password)
+        except:
+            NSLog("Error saving pass to keychain")
                 
         self.prefWindow.orderOut_(None)
     
